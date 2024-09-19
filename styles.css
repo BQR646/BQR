@@ -5,20 +5,27 @@
     box-sizing: border-box;
   }
   
-body, html {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow-x: hidden; /* إخفاء أي تجاوزات أفقية */
+body {
+  font-family: 'Stick', sans-serif; /* Apply the new default font */
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-/* لضبط عرض المحتوى الرئيسي بشكل مناسب */
-.intro-box, .portfolio {
-  width: 100%; /* تأكد من أن العرض لا يتجاوز 100% */
-  max-width: 1200px; /* تقييد العرض إلى 1200 بكسل مثلاً */
-  margin: 0 auto; /* محاذاة المحتوى في المنتصف */
-  padding: 20px; /* إضافة مسافة داخلية لتجنب تلاصق المحتوى بالجوانب */
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
   
   /* 3D cubes */
@@ -196,8 +203,9 @@ body, html {
     text-align: center;
   }
   
-  .portfolio-video, .profile-img {
-  max-width: 100%; /* تأكد من أن الفيديوهات والصور لا تتجاوز حجم الإطار المحدد لها */
+.portfolio-video {
+  width: 100%;
   height: auto;
+  border-radius: 10px;
 }
   
